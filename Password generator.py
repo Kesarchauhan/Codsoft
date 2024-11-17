@@ -51,7 +51,6 @@ def password_generator():
             print("Please enter a valid number.")
             continue
 
-        avoid_ambiguous = input("Avoid ambiguous characters (e.g., l, I, 1, O, 0)? (yes/no): ").strip().lower() == 'yes'
         
         # Generate and display the password
         password = generate_password(length, complexity)
