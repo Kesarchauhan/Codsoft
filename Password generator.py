@@ -21,7 +21,7 @@ def assess_strength(password):
     else:
         return "Strong"
 
-# Main program
+# Main program 
 def password_generator():
     history = []
     print("Welcome to the Enhanced Password Generator!")
