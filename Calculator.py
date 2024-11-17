@@ -39,7 +39,7 @@ def perform_calculation(num1, num2, operation):
     else:
         return "Invalid operation. Please choose a valid option."
 
-# Main function to run the calculator
+# Main function 
 def calculator():
     print("Welcome to the Enhanced Scientific Calculator!")
     print("Select an operation by entering the number:")
@@ -62,7 +62,7 @@ def calculator():
             print("Invalid input! Please select a number between 1 and 10.\n")
             continue
 
-        # Ask for the appropriate number of inputs based on the operation
+        # Ask for the  number of inputs based on the operation
         if operation in [1, 2, 3, 4, 6, 7]:  # Operations that require 2 inputs
             try:
                 num1 = float(input("Enter the first number: "))
@@ -85,7 +85,6 @@ def calculator():
         result = perform_calculation(num1, num2, operation)
         print(f"Result: {result}\n")
 
-        # Ask if the user wants to perform another calculation
         another_calculation = input("Do you want to perform another calculation? (yes/no): ").lower()
         if another_calculation != "yes":
             print("Thank you for using the calculator! Goodbye.")
